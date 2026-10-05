@@ -1,0 +1,6 @@
+python-telegram-bot>=22,<23
+pyrogram>=2.0.106
+tgcrypto>=1.2.5
+py-tgcalls>=2.2.8
+edge-tts>=7.0.0
+cryptography>=43.0.0
