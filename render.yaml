@@ -1,0 +1,27 @@
+services:
+  - type: worker
+    name: ghost-beast-vc-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+
+      - key: OWNER_IDS
+        sync: false
+
+      - key: API_ID
+        sync: false
+
+      - key: API_HASH
+        sync: false
+
+      - key: DATA_DIR
+        value: /data
+
+    disk:
+      name: ghost-beast-data
+      mountPath: /data
+      sizeGB: 10
