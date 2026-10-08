@@ -5,7 +5,7 @@ from pyrogram import Client, filters, idle
 from pyrogram.types import Message
 from pyrogram.errors import SessionPasswordNeeded, PhoneCodeInvalid
 from pytgcalls import PyTgCalls
-from pytgcalls.types.input_stream import AudioPiped
+from pytgcalls.types import AudioPiped
 
 # ================= CONFIGURATIONS =================
 API_ID = int(os.environ.get("API_ID", "12345678"))
